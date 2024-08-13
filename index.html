@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Blog preview card</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍
@@ -26,15 +30,33 @@
     </style> -->
   </head>
   <body>
-    Learning Published 21 Dec 2023 HTML & CSS foundations These languages are
-    the backbone of every website, defining structure, content, and
-    presentation. Greg Hooper
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <main>
+      <img
+        src="./assets/images/illustration-article.svg"
+        alt="card image"
+        class="card-img"
+      />
+      <p class="card-label">Learning</p>
+      <p class="card-date">Published 21 Dec 2023</p>
+      <p class="card-title">HTML & CSS foundations</p>
+      <p class="card-memo">
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+      <div class="profile-container">
+        <img
+          src="./assets/images/image-avatar.webp"
+          alt="profile icon"
+          class="profile-icon"
+        />
+        <p class="profile-name">Greg Hooper</p>
+      </div>
+    </main>
   </body>
+  <!-- <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by <a href="#">code269</a>.
+  </div> -->
 </html>

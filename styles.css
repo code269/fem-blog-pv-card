@@ -1,19 +1,79 @@
-/* ## Colors
-
-- Yellow: hsl(47, 88%, 63%)
-
-- White: hsl(0, 0%, 100%)
-
-- Gray 500: hsl(0, 0%, 42%)
-- Gray 950: hsl(0, 0%, 7%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 16px
-
+/* ## Typography
 ### Font
 
 - Family: [Figtree](https://fonts.google.com/specimen/Figtree)
 - Weights: 500, 800 */
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+
+  --ff-bold: 800;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
+}
+
+main {
+  width: 350px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+main > * {
+  margin-bottom: 0.8em;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: inherit;
+}
+
+.card-label {
+  background-color: var(--yellow);
+}
+
+.card-date {
+  font-size: 0.8em;
+}
+
+.card-title {
+  font-size: 1.3em;
+  font-weight: var(--ff-bold);
+}
+
+.card-memo {
+  color: var(--gray-500);
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 0;
+}
+
+.profile-icon {
+  width: 36px;
+}
+
+.profile-name {
+  font-weight: var(--ff-bold);
+}
