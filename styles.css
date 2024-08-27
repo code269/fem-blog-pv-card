@@ -67,6 +67,11 @@ main > * {
   font-weight: var(--ff-bold);
 }
 
+.card-title:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
 .card-memo {
   margin-bottom: 1.3em;
   line-height: 1.5rem;
